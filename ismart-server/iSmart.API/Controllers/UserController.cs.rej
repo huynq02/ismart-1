@@ -1,0 +1,10 @@
+diff a/ismart-server/iSmart.API/Controllers/UserController.cs b/ismart-server/iSmart.API/Controllers/UserController.cs	(rejected hunks)
+@@ -81,7 +81,7 @@
+             smtp.EnableSsl = true;
+             smtp.Port = 587;
+             smtp.Send(mm);
+-            var result = _userService.AddUser(user, warehouseId);
++            var result = _userService.AddUser(user);
+             return Ok(result);
+         }
+ 

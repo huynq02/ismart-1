@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Các kiểu CSS tùy chỉnh của bạn */
+
+:root {
+    // --primary: #2275b7;
+    --secondary: #5d586c;
+    --toastify-icon-color-success: #2275b7 !important;
+    --toastify-color-progress-success: #2275b7 !important;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif !important;
+    font-optical-sizing: auto;
+}
+
+.custom-rounded {
+    border-radius: 15px;
+}
+.box-color-primary {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: white !important;
+}
+.text-color-primary {
+    color: var(--primary) !important;
+    font-weight: bold !important;
+}
+.text-color {
+    color: var(--secondary) !important;
+}
+.italic {
+    font-style: italic !important;
+}
+
+.warning {
+    font-style: italic !important;
+    color: #db4437;
+}
+
+.background-primary {
+    background-color: #f8f7fa !important;
+}
+.text-sidebar {
+    color: #4b465c !important;
+}
+
+/* CSS cho sidebar */
+.sidebar-item {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-item > div {
+    transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sidebar-item:hover > div {
+    transform: translateX(10px);
+    color: var(--primary);
+}
+
+.table-responsive {
+    border-collapse: collapse;
+    border: 1px solid #dbdade;
+}
+.table {
+    margin: 0 !important;
+}
+.table-border {
+    border: none;
+}
+
+.table-border td,
+.table-border th {
+    border: 1px solid #dbdade;
+}
+
+.table-border thead th {
+    border-bottom: 2px solid #dbdade;
+}
+
+.table-border tbody td {
+    border-bottom: 1px solid #dbdade;
+}
+
+.table-border tbody tr:last-child td {
+    border-bottom: none;
+}
+.rounded-status {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: rgba(40, 199, 111, 0.16);
+    border-radius: 7px;
+}
+
+.rounded-status-text {
+    color: #28c76f;
+    font-weight: bold;
+}
+
+.rounded-status-stop {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: rgba(234, 84, 85, 0.16);
+    border-radius: 7px;
+}
+
+.rounded-status-stop-text {
+    color: #ea5455;
+    font-weight: bold;
+}
+
+.FormSelectCSS:focus {
+    box-shadow: none !important;
+    border: none !important;
+}
+.FormSelectCSS > option:hover {
+    background-color: #2275b7 !important;
+    border: white;
+    color: white !important;
+    font-weight: bold;
+}
+.dropdown-toggle::after {
+    color: white;
+}
+.DropdownButtonCSS > button {
+    background-color: #2275b7 !important;
+    border: white;
+    color: white !important;
+    font-weight: bold;
+}
+.DropdownButtonCSS > div {
+    position: fixed !important;
+}
+.DropdownButtonCSS > button:hover {
+    background-color: #2275b7 !important;
+    border: white;
+    color: white !important;
+    font-weight: bold;
+}
+.DropdownButtonCSS > button:active {
+    background-color: #2275b7 !important;
+    border: none !important;
+    color: white !important;
+    font-weight: bold;
+}
+.DropdownButtonCSS > button.show {
+    background-color: #2275b7 !important;
+    border: none !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+.ButtonCSSDropdown > button {
+    background-color: #2275b7 !important;
+    border: white;
+    color: white !important;
+    font-weight: bold;
+}
+.ButtonCSSDropdown > div > a:active {
+    background-color: #2275b7 !important;
+    border: white;
+    color: white !important;
+}
+.ButtonCSSDropdown > ul > a:active {
+    background-color: #2275b7 !important;
+    border: white;
+    color: white !important;
+}
+.ButtonCSSDropdown > button:hover {
+    background-color: #2275b7 !important;
+    border: white;
+    color: white !important;
+    font-weight: bold;
+}
+a#navbarDropdownMenuAvatarNoti.dropdown-toggle.nav-link {
+    background-color: #2275b7; /* Màu nền */
+    opacity: 1; /* Độ trong suốt */
+    width: 100px; /* Chiều rộng */
+    height: 50px; /* Chiều cao */
+    cursor: pointer; /* Thay đổi con trỏ chuột */
+    transition: opacity 0.3s ease; /* Hiệu ứng chuyển đổi khi thay đổi độ trong suốt */
+}
+a#navbarDropdownMenuAvatarNoti.dropdown-toggle.nav-link::after {
+    opacity: 0; /* Hiển thị hoàn toàn khi di chuột qua */
+}
+
+.ButtonCSS {
+    background-color: #2275b7 !important;
+    border: white !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+.ButtonCSS:hover {
+    background-color: #2275b7 !important;
+
+    color: white !important;
+    font-weight: bold;
+}
+.inputCSS:focus {
+    box-shadow: none !important;
+    border: #2275b7 1px solid !important;
+}
+
+.actionButtonCSS {
+    color: black;
+    padding: 5px;
+    transition: 0.2s cubic-bezier(0.1, 0, 0.2, 1);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.actionButtonCSS:hover {
+    background-color: #2275b7;
+}
+
+.edit-product-form {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px;
+    padding: 20px;
+    color: #2b2b2b !important;
+}
+
+.edit-product-form h4 {
+    margin-bottom: 20px;
+}
+
+.edit-product-form .image-section {
+    display: flex;
+
+    flex-direction: row;
+}
+
+.edit-product-form .image-section i {
+    margin-right: 10px;
+    font-size: 5rem;
+}
+
+.edit-product-form .description {
+    margin-bottom: 20px;
+}
+
+.edit-product-form .row {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.edit-product-form .form-group {
+    margin-bottom: 20px;
+}
+
+.toast-success {
+    color: black !important;
+}
+
+.page-item.active .page-link {
+    color: white !important;
+    background-color: #2275b7 !important;
+    border: #2275b7 1px solid !important;
+    box-shadow: none !important;
+}
+.page-item {
+    background-color: white !important;
+    box-shadow: none !important;
+}
+
+.page-item .page-link {
+    color: #2275b7 !important;
+    box-shadow: none !important;
+}
+ul.pagination li.page-item.disabled a.page-link {
+    color: gray !important;
+    background-color: white;
+}
+.text-color-primary {
+    color: #2b2b2b !important;
+}
+
+.table th,
+.table td {
+    color: #2b2b2b;
+}
+
+.table th {
+    text-transform: uppercase !important;
+}
+.table th div {
+    text-transform: none !important;
+}
+
+.custom-switch > input {
+    border-color: #2275b7 !important;
+}
+
+.datepickerCSS {
+    width: auto;
+    height: 35px;
+    border-radius: 8px;
+    border: solid 2px #2275b7 !important;
+}
+
+.datepickerCSS:focus-visible {
+    width: auto;
+    height: 35px;
+    border-radius: 8px;
+    border: solid 2px #2275b7 !important;
+}
+/* Định dạng cho thẻ input */
+input[type='date'].datepickerCSS {
+    padding: 8px 12px;
+
+    border-radius: 8px !important;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Định dạng cho lịch */
+input[type='date'].datepickerCSS::-webkit-calendar-picker-indicator {
+    filter: invert(0.5);
+    cursor: pointer;
+}
+
+/* Định dạng khi datepicker được focus */
+input[type='date'].datepickerCSS:focus {
+    outline: none;
+    border-color: #2275b7;
+    box-shadow: 0 0 5px rgba(36, 203, 199, 0.5);
+}
+
+/* Định dạng cho ngày được chọn */
+input[type='date'].datepickerCSS::-webkit-datetime-edit-day-field {
+    padding: 0 4px;
+}
+
+/* Định dạng cho tháng được chọn */
+input[type='date'].datepickerCSS::-webkit-datetime-edit-month-field {
+    padding: 0 4px;
+}
+
+/* Định dạng cho năm được chọn */
+input[type='date'].datepickerCSS::-webkit-datetime-edit-year-field {
+    padding: 0 4px;
+}
+
+.red > button {
+    background-color: #ea5455 !important;
+}
+.red > button:hover {
+    background-color: #db4437 !important;
+}
+
+.access-denied {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Take full viewport height */
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #f8d7da;
+}
+
+.message {
+    /* Light red background */
+    color: #721c24; /* Dark red text */
+
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 50px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.ButtonRed {
+    background-color: #f5dce0 !important;
+    border: #ea5455 !important;
+    color: #ea5455 !important;
+    font-weight: bold !important;
+}
+.card-title {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+// csslogin
+
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #2c9d69, #31b176, #37c484, #49cc90, #5dd29c, #71d7a8, #85ddb4);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #2c9d69, #31b176, #37c484, #49cc90, #5dd29c, #71d7a8, #85ddb4);
+}
+
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 100vh !important;
+    }
+}
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: 0.3rem;
+        border-bottom-right-radius: 0.3rem;
+    }
+}
+
+/* ---------- SIGN IN ---------- */
+.sign-in__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 100px;
+  }
+  
+  .sign-in__backdrop {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .sign-in__wrapper form {
+    width: 40rem;
+    max-width: 100%;
+    z-index: 1;
+    animation: showSignInForm 1s;
+  }
+  
+  .sign-in__wrapper form img {
+    width: 10rem;
+  }
+  
+  @keyframes showSignInForm {
+    0%,
+    30% {
+      transform: translate(0, -200%);
+    }
+    70%,
+    90% {
+      transform: translate(0, 1rem);
+    }
+    80%,
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  .custom-navbar {
+    background: #2275b7 !important;
+}
+
